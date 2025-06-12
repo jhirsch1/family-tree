@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "../styles/Person.css";
 import { number } from "yargs";
+import { NullableDate } from "./types";
 
 // interface containing the React inputs to the class
 interface PersonProps {
   name: String;
-  birth: Date | null;
-  death: Date | null;
+  birth: NullableDate | null;
+  death: NullableDate | null;
   marriage_date: Date | null;
   father: PersonProps | null;
   mother: PersonProps | null;
@@ -16,29 +17,32 @@ interface PersonProps {
   birth_place: String | null;
   death_place: String | null;
   marriage_place: String | null;
-  posX: number | null;
-  posY: number | null;
+  indent: number | null;
+  row: number | null;
 }
 
 // helper function to help determine the position on screen of the person box
-function position(top: number | null, left: number | null) {
-  let top_str: string;
-  let left_str: string;
-  if (top === null || left === null) {
-    // If top or left is null, default to 0
-    top_str = "0vh";
-    left_str = "0vw";
+function position(indent: number | null, row: number | null) {
+  let indent_str: string;
+  let row_str: string
+  if (indent === null || row === null) {
+    // If indent or col is null, default to 0
+    indent_str = "0vw";
+    row_str = "0vh"
     return {
-      left: left_str,
-      top: top_str,
+      left: indent_str,
+      top: row_str,
     };
   } else {
-    top_str = top.toString() + "vh";
-    left_str = left.toString() + "vw";
+    // change this based on how large we want it
+    let row1: number = row * 5.5;
+    let indent1: number = indent * 5.5;
+
+    indent_str = indent1.toString() + "vw";
+    row_str = row1.toString() + "vh";
 
     return {
-      left: left_str,
-      top: top_str,
+      left: indent_str,
     };
   }
 }
@@ -63,7 +67,7 @@ export default function Person(props: PersonProps) {
         aria-label={aria_label}
         aria-description="a person in the family tree"
         className="Person"
-        style={position(props.posX, props.posY)}
+        style={position(props.indent, props.row)}
         onClick={handleClick}
       >
         {props.name}: {JSON.stringify(props.birth)} {props.birth_place} -{" "}
@@ -88,8 +92,8 @@ export default function Person(props: PersonProps) {
         birth_place={props.spouse?.birth_place || null}
         death_place={props.spouse?.death_place || null}
         marriage_place={props.spouse?.marriage_place || null}
-        posX={props.spouse?.posX || null}
-        posY={props.spouse?.posY || null}
+        indent={props.spouse?.indent || null}
+        row={props.spouse?.row || null}
       />
 
       {/* list of children - posX and posY are for css styling */}
@@ -107,8 +111,8 @@ export default function Person(props: PersonProps) {
           birth_place={child.birth_place}
           death_place={child.death_place}
           marriage_place={child.marriage_place}
-          posX={props.posX}
-          posY={props.posY}
+          indent={props.indent}
+          row={props.row}
         />
       ))}
     </>
