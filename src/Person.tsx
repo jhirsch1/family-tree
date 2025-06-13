@@ -12,6 +12,7 @@ interface PersonProps {
   father: PersonProps | null;
   mother: PersonProps | null;
   spouse: PersonProps | null;
+  spouse2: PersonProps | null;
   children: PersonProps[];
   info: String | null;
   birth_place: String | null;
@@ -24,11 +25,11 @@ interface PersonProps {
 // helper function to help determine the position on screen of the person box
 function position(indent: number | null, row: number | null) {
   let indent_str: string;
-  let row_str: string
+  let row_str: string;
   if (indent === null || row === null) {
     // If indent or col is null, default to 0
     indent_str = "0vw";
-    row_str = "0vh"
+    row_str = "0vh";
     return {
       left: indent_str,
       top: row_str,
@@ -73,13 +74,24 @@ export default function Person(props: PersonProps) {
         {props.name}: {JSON.stringify(props.birth)} {props.birth_place} -{" "}
         {JSON.stringify(props.death)} {props.death_place}
       </div>
+      {/* Info box should appear only when clicked */}
       {!clicked ? (
         <div className="info">
+          <p>father: {JSON.stringify(props.father?.name)}</p>
+          <p>mother: {JSON.stringify(props.mother?.name)}</p>
+          <p>spouse: {JSON.stringify(props.spouse?.name)}</p>
+          <p>spouse2: {JSON.stringify(props.spouse2?.name)}</p>
+          <p>marriage_place: {JSON.stringify(props.marriage_place)}</p>
+          <p>marriage_date: {JSON.stringify(props.marriage_date)}</p>
+          <p>
+            children:{" "}
+            {JSON.stringify(props.children.map((child) => child.name))}
+          </p>
           <p>{props.info}</p>
         </div>
       ) : null}
 
-      <Person
+      {/* <Person
         name={props.spouse?.name || "Unknown Spouse"}
         birth={props.spouse?.birth || null}
         death={props.spouse?.death || null}
@@ -94,10 +106,10 @@ export default function Person(props: PersonProps) {
         marriage_place={props.spouse?.marriage_place || null}
         indent={props.spouse?.indent || null}
         row={props.spouse?.row || null}
-      />
+      /> */}
 
       {/* list of children - posX and posY are for css styling */}
-      {props.children.map((child, index) => (
+      {/* {props.children.map((child, index) => (
         <Person
           name={child.name}
           birth={child.birth}
@@ -114,7 +126,7 @@ export default function Person(props: PersonProps) {
           indent={props.indent}
           row={props.row}
         />
-      ))}
+      ))} */}
     </>
   );
 }
