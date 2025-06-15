@@ -80,18 +80,18 @@ export default function Person(props: PersonProps) {
       </div>
       {/* Info box should appear only when clicked */}
       {clicked ? (
-        <div className="info">
-          <p>father: {props.father}</p>
-          <p>mother: {props.mother}</p>
-          <p>spouse: {props.spouse}</p>
-          <p>marriage_place: {props.marriage_place}</p>
-          <p>marriage_date: {props.marriage_date}</p>
-          <p>children: {props.children}</p>
-          <p>spouse2: {props.spouse2}</p>
-          <p>marriage_place2: {props.marriage_place2}</p>
-          <p>marriage_date2: {props.marriage_date2}</p>
-          <p>children2: {props.children2}</p>
-          <p>Info: {props.info}</p>
+        <div className="Info">
+          <p className="Info_par">father: {props.father}</p>
+          <p className="Info_par">mother: {props.mother}</p>
+          <p className="Info_par">spouse: {props.spouse}</p>
+          <p className="Info_par">marriage_place: {props.marriage_place}</p>
+          <p className="Info_par">marriage_date: {props.marriage_date}</p>
+          <p className="Info_par">children: {props.children}</p>
+          <p className="Info_par">spouse2: {props.spouse2}</p>
+          <p className="Info_par">marriage_place2: {props.marriage_place2}</p>
+          <p className="Info_par">marriage_date2: {props.marriage_date2}</p>
+          <p className="Info_par">children2: {props.children2}</p>
+          <p className="Info_par">Info: {props.info}</p>
         </div>
       ) : null}
 
