@@ -1,29 +1,32 @@
 import { useState } from "react";
-import "../styles/Person.css";
+import "../styles/main.css";
 import { number } from "yargs";
 import { NullableDate } from "./types";
 
 // interface containing the React inputs to the class
 interface PersonProps {
+  generation: String | null;
   name: String;
-  birth: NullableDate | null;
-  death: NullableDate | null;
-  marriage_date: Date | null;
-  father: PersonProps | null;
-  mother: PersonProps | null;
-  spouse: PersonProps | null;
-  spouse2: PersonProps | null;
-  children: PersonProps[];
-  info: String | null;
+  birth: String | null;
   birth_place: String | null;
+  death: String | null;
   death_place: String | null;
+  father: String | null;
+  mother: String | null;
+  spouse: String | null;
+  marriage_date: String | null;
   marriage_place: String | null;
-  indent: number | null;
-  row: number | null;
+  children: String | null;
+  spouse2: String | null;
+  marriage_date2: String | null;
+  marriage_place2: String | null;
+  children2: String | null;
+  info: String | null;
+  index: number | null;
 }
 
 // helper function to help determine the position on screen of the person box
-function position(indent: number | null, row: number | null) {
+function position(indent: String | null, row: number | null) {
   let indent_str: string;
   let row_str: string;
   if (indent === null || row === null) {
@@ -31,19 +34,20 @@ function position(indent: number | null, row: number | null) {
     indent_str = "0vw";
     row_str = "0vh";
     return {
-      left: indent_str,
+    //   left: indent_str,
       top: row_str,
     };
   } else {
     // change this based on how large we want it
     let row1: number = row * 5.5;
-    let indent1: number = indent * 5.5;
+    // let indent1: number = indent * 5.5;
 
-    indent_str = indent1.toString() + "vw";
+    // indent_str = indent1.toString() + "vw";
     row_str = row1.toString() + "vh";
 
     return {
-      left: indent_str,
+    //   left: indent_str,
+      top: row_str,
     };
   }
 }
@@ -68,26 +72,26 @@ export default function Person(props: PersonProps) {
         aria-label={aria_label}
         aria-description="a person in the family tree"
         className="Person"
-        style={position(props.indent, props.row)}
+        style={position(props.generation, props.index)}
         onClick={handleClick}
       >
-        {props.name}: {JSON.stringify(props.birth)} {props.birth_place} -{" "}
-        {JSON.stringify(props.death)} {props.death_place}
+        {props.name}: {props.birth} {props.birth_place} - {props.death}{" "}
+        {props.death_place}
       </div>
       {/* Info box should appear only when clicked */}
-      {!clicked ? (
+      {clicked ? (
         <div className="info">
-          <p>father: {JSON.stringify(props.father?.name)}</p>
-          <p>mother: {JSON.stringify(props.mother?.name)}</p>
-          <p>spouse: {JSON.stringify(props.spouse?.name)}</p>
-          <p>spouse2: {JSON.stringify(props.spouse2?.name)}</p>
-          <p>marriage_place: {JSON.stringify(props.marriage_place)}</p>
-          <p>marriage_date: {JSON.stringify(props.marriage_date)}</p>
-          <p>
-            children:{" "}
-            {JSON.stringify(props.children.map((child) => child.name))}
-          </p>
-          <p>{props.info}</p>
+          <p>father: {props.father}</p>
+          <p>mother: {props.mother}</p>
+          <p>spouse: {props.spouse}</p>
+          <p>marriage_place: {props.marriage_place}</p>
+          <p>marriage_date: {props.marriage_date}</p>
+          <p>spouse2: {props.spouse2}</p>
+          <p>marriage_place2: {props.marriage_place2}</p>
+          <p>marriage_date2: {props.marriage_date2}</p>
+          <p>children: {props.children}</p>
+          <p>children2: {props.children2}</p>
+          <p>Info: {props.info}</p>
         </div>
       ) : null}
 
