@@ -86,10 +86,10 @@ export default function Person(props: PersonProps) {
           <p>spouse: {props.spouse}</p>
           <p>marriage_place: {props.marriage_place}</p>
           <p>marriage_date: {props.marriage_date}</p>
+          <p>children: {props.children}</p>
           <p>spouse2: {props.spouse2}</p>
           <p>marriage_place2: {props.marriage_place2}</p>
           <p>marriage_date2: {props.marriage_date2}</p>
-          <p>children: {props.children}</p>
           <p>children2: {props.children2}</p>
           <p>Info: {props.info}</p>
         </div>
