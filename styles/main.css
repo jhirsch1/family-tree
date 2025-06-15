@@ -46,356 +46,186 @@
   /* font-size: 4vw; */
 }
 
-.ScheduleBackground {
-  /* ScheduleBackground */
-  box-sizing: border-box;
+.Person_0 {
+  /* Person in generation 0 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 0px;
 
-  position: absolute;
-  width: 48vw;
-  height: 73vh;
-  left: 49.375vw;
-  top: 21vh;
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
 
-  background: #d9d9d9;
-  border: 2px solid #000000;
+.Person_0m {
+  /* Person in generation 0, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 20px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_1 {
+  /* Person in generation 1 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 40px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_1m {
+  /* Person in generation 0, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 60px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_2 {
+  /* Person in generation 2 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 80px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_2m {
+  /* Person in generation 2, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 100px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_3 {
+  /* Person in generation 3 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 120px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_3m {
+  /* Person in generation 3, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 140px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_4 {
+  /* Person in generation 4 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 160px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_4m {
+  /* Person in generation 4, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 180px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_5 {
+  /* Person in generation 5 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 200px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_5m {
+  /* Person in generation 5, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 220px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_6 {
+  /* Person in generation 6 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 240px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_6m {
+  /* Person in generation 6, by marriage */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 260px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
+.Person_7 {
+  /* Person in generation 7 */
+  position: static;
+  width: 100vw;
+  height: 4vh;
+  margin-left: 280px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
 }
 
 
-.SemBackground {
-  /* SemBackground */
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 11vw;
-  height: 35vh;
-
-  background: #1e1e1e;
-  border: 2px solid #000000;
-}
-
-.SemYearHeader {
-  /* SemHeader */
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 10vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 2px solid #000000;
-}
-
-.ClassBox {
-  /* SemHeader */
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 10vw;
-  height: 5vh;
-
-  cursor: pointer;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  transition: all 250ms;
-
-  background: #d9d9d9;
-  border: 2px solid #000000;
-}
-
-.ClassBox:hover,
-.ClassBox:focus {
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.ClassBox:hover {
-  background-color: #ede2e2;
-  transform: translateY(-0.2vw);
-}
-
-.ClassBox:active {
-  background-color: #ede2e2;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-.ClassOptionBackground {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 30vw;
-  height: 40vh;
-  left: 9vw;
-  top: 53vh;
-
-  background: #d9d9d9;
-  border: 2px solid #000000;
-}
-
-.OptionButton {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 9.97vw;
-  height: 5vh;
-
-  cursor: pointer;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.OptionButton:hover {
-  background-color: #ede2e2;
-}
-
-.OptionList {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 9.97vw;
-  height: 29.5vh;
-  overflow: scroll;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.ClassOfBox {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 20vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.ClassOfButton {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 5.5vw;
-  height: 5vh;
-
-  cursor: pointer;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.ClassOfButton:hover {
-  background: #ede2e2;
-}
-
-.PathwayDropdown {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 12vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.PathwayOption {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 12vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.SearchBox {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 25.5vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.SearchDropdown {
-  list-style-type: none;
-}
-
-.SearchOption {
-  box-sizing: border-box;
-  list-style-type: none;
-
-  position: absolute;
-  width: 20vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 5vh;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-.ClassOptionTable {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 9.8vw;
-  height: 5vh;
-
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.5vw;
-
-  background: #d9d9d9;
-}
-
-.ClassOptionRow {
-  background: #d9d9d9;
-}
-
-.ClassOptionBody {
-  background: #d9d9d9;
-}
-
-.ClassOptionInput {
-  background: #d9d9d9;
-}
-
-.InfoBox {
-  box-sizing: border-box;
-  padding: 0.5vw;
-
-  position: absolute;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 2.5vh;
-  font-size: 1vw;
-
-  border-radius: 0.25rem;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
-}
-
-/* Action Buttons, specify left alignment */
-.ActionButton {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #d9d9d9;
-  border: 0.1vw solid #000000;
-  border-radius: 0.25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-flex;
-
-  font-size: 1.5vw;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-
-  position: absolute;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-
-  width: 12vw;
-  height: 5vh;
-  top: 15vh;
-}
-
-.ActionButton:hover,
-.ActionButton:focus {
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.ActionButton:hover {
-  background-color: #ede2e2;
-  transform: translateY(-0.2vw);
-}
-
-.ActionButton:active {
-  background-color: #ede2e2;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-.ErrorBox {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 30vw;
-  height: 20vh;
-  left: 35vw;
-  top: 40vh;
-
-  border-radius: 0.25rem;
-
-  text-align: center;
-  color: #a51c30;
-  vertical-align: middle;
-  line-height: 6vh;
-  font-size: 3vw;
-
-  background: #d9d9d9;
-  border: 0.1vw solid #000000;
+.Person_0:hover,
+.Person_0m:hover,
+.Person_1:hover,
+.Person_1m:hover,
+.Person_2:hover,
+.Person_2m:hover,
+.Person_3:hover,
+.Person_3m:hover,
+.Person_4:hover,
+.Person_4m:hover,
+.Person_5:hover,
+.Person_5m:hover,
+.Person_6:hover,
+.Person_6m:hover,
+.Person_7:hover {
+  font-weight: bold;
 }

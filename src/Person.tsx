@@ -22,35 +22,8 @@ interface PersonProps {
   marriage_place2: String | null;
   children2: String | null;
   info: String | null;
-  index: number | null;
 }
 
-// helper function to help determine the position on screen of the person box
-function position(indent: String | null, row: number | null) {
-  let indent_str: string;
-  let row_str: string;
-  if (indent === null || row === null) {
-    // If indent or col is null, default to 0
-    indent_str = "0vw";
-    row_str = "0vh";
-    return {
-    //   left: indent_str,
-      top: row_str,
-    };
-  } else {
-    // change this based on how large we want it
-    let row1: number = row * 5.5;
-    // let indent1: number = indent * 5.5;
-
-    // indent_str = indent1.toString() + "vw";
-    row_str = row1.toString() + "vh";
-
-    return {
-    //   left: indent_str,
-      top: row_str,
-    };
-  }
-}
 
 export default function Person(props: PersonProps) {
   // hook for managing the clicked state
@@ -63,19 +36,20 @@ export default function Person(props: PersonProps) {
     setClicked(!clicked); // Toggle clicked state
   }
 
-  // aria-label for accessibility
+  // aria label for accessibility
   const aria_label = "Person: " + props.name;
+
+  const class_name = "Person_" + props.generation;
 
   return (
     <>
       <div
         aria-label={aria_label}
         aria-description="a person in the family tree"
-        className="Person"
-        style={position(props.generation, props.index)}
+        className={class_name}
         onClick={handleClick}
       >
-        {props.name}: {props.birth} {props.birth_place} - {props.death}{" "}
+        {props.generation} {props.name}: {props.birth} {props.birth_place} - {props.death}{" "}
         {props.death_place}
       </div>
       {/* Info box should appear only when clicked */}
@@ -118,42 +92,6 @@ export default function Person(props: PersonProps) {
         </div>
       ) : null}
 
-      {/* <Person
-        name={props.spouse?.name || "Unknown Spouse"}
-        birth={props.spouse?.birth || null}
-        death={props.spouse?.death || null}
-        marriage_date={props.spouse?.marriage_date || null}
-        father={props.spouse?.father || null}
-        mother={props.spouse?.mother || null}
-        spouse={props.spouse?.spouse || null}
-        children={props.spouse?.children || []}
-        info={props.spouse?.info || null}
-        birth_place={props.spouse?.birth_place || null}
-        death_place={props.spouse?.death_place || null}
-        marriage_place={props.spouse?.marriage_place || null}
-        indent={props.spouse?.indent || null}
-        row={props.spouse?.row || null}
-      /> */}
-
-      {/* list of children - posX and posY are for css styling */}
-      {/* {props.children.map((child, index) => (
-        <Person
-          name={child.name}
-          birth={child.birth}
-          death={child.death}
-          marriage_date={child.marriage_date}
-          father={child.father}
-          mother={child.mother}
-          spouse={child.spouse}
-          children={child.children}
-          info={child.info}
-          birth_place={child.birth_place}
-          death_place={child.death_place}
-          marriage_place={child.marriage_place}
-          indent={props.indent}
-          row={props.row}
-        />
-      ))} */}
     </>
   );
 }

@@ -49,7 +49,6 @@ function App() {
 
             {peoplelist.map((person, index) => (
             <Person
-                index={index}
                 name={person.name}
                 birth={
                     person.birth
