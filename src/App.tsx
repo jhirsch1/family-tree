@@ -41,8 +41,8 @@ function App() {
 
     return (
       <div className="App">
-        <div className="button1" onClick={handleClickHirschhorn}> Hirschhorn </div>
-        <div className="button2" onClick={handleClickBronsther}>Bronsther</div>
+        {/* <div className="button1" onClick={handleClickHirschhorn}> Hirschhorn </div>
+        <div className="button2" onClick={handleClickBronsther}>Bronsther</div> */}
         <h1>Family Tree</h1>
         <p>Click on a person to see their details.</p>
 
