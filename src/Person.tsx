@@ -81,17 +81,39 @@ export default function Person(props: PersonProps) {
       {/* Info box should appear only when clicked */}
       {clicked ? (
         <div className="Info">
-          <p className="Info_par">father: {props.father}</p>
-          <p className="Info_par">mother: {props.mother}</p>
-          <p className="Info_par">spouse: {props.spouse}</p>
-          <p className="Info_par">marriage_place: {props.marriage_place}</p>
-          <p className="Info_par">marriage_date: {props.marriage_date}</p>
-          <p className="Info_par">children: {props.children}</p>
-          <p className="Info_par">spouse2: {props.spouse2}</p>
-          <p className="Info_par">marriage_place2: {props.marriage_place2}</p>
-          <p className="Info_par">marriage_date2: {props.marriage_date2}</p>
-          <p className="Info_par">children2: {props.children2}</p>
-          <p className="Info_par">Info: {props.info}</p>
+          {props.father ? (
+            <p className="Info_par">father: {props.father}</p>
+          ) : null}
+          {props.mother ? (
+            <p className="Info_par">mother: {props.mother}</p>
+          ) : null}
+          {props.spouse ? (
+            <p className="Info_par">spouse: {props.spouse}</p>
+          ) : null}
+          {props.marriage_place ? (
+            <p className="Info_par">marriage_place: {props.marriage_place}</p>
+          ) : null}
+          {props.marriage_date ? (
+            <p className="Info_par">marriage_date: {props.marriage_date}</p>
+          ) : null}
+          {props.children ? (
+            <p className="Info_par">children: {props.children}</p>
+          ) : null}
+          {props.spouse2 ? (
+            <p className="Info_par">spouse2: {props.spouse2}</p>
+          ) : null}
+          {props.marriage_place2 ? (
+            <p className="Info_par">marriage_place2: {props.marriage_place2}</p>
+          ) : null}
+          {props.marriage_date2 ? (
+            <p className="Info_par">marriage_date2: {props.marriage_date2}</p>
+          ) : null}
+          {props.children2 ? (
+            <p className="Info_par">children2: {props.children2}</p>
+          ) : null}
+          {props.info ? (
+            <p className="Info_par">Info: {props.info}</p>
+          ) : null}
         </div>
       ) : null}
 
