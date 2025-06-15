@@ -26,8 +26,8 @@
   /*line-height: 116px;*/
 }
 
-.Info {
-  /* Info */
+.Info_background {
+  /* Info Box background */
   position: sta;
   background: #d9d9d9;
   border: 2px solid #000000;
@@ -210,7 +210,6 @@
   /* font-weight: 400;
   font-size: 4vw; */
 }
-
 
 .Person_0:hover,
 .Person_0m:hover,

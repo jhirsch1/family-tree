@@ -22,6 +22,7 @@ interface PersonProps {
   marriage_place2: String | null;
   children2: String | null;
   info: String | null;
+  index: String | null;
 }
 
 
@@ -49,12 +50,12 @@ export default function Person(props: PersonProps) {
         className={class_name}
         onClick={handleClick}
       >
-        {props.generation} {props.name}: {props.birth} {props.birth_place} - {props.death}{" "}
-        {props.death_place}
+        {props.index} - {props.name}: {props.birth} {props.birth_place} -{" "}
+        {props.death} {props.death_place}
       </div>
       {/* Info box should appear only when clicked */}
       {clicked ? (
-        <div className="Info">
+        <div className="Info_background">
           {/* Each piece of info should only appear when there is data */}
           {props.father ? (
             <p className="Info_par">Father: {props.father}</p>
@@ -65,11 +66,11 @@ export default function Person(props: PersonProps) {
           {props.spouse ? (
             <p className="Info_par">Spouse: {props.spouse}</p>
           ) : null}
-          {props.marriage_place ? (
-            <p className="Info_par">Marriage Place: {props.marriage_place}</p>
-          ) : null}
           {props.marriage_date ? (
             <p className="Info_par">Marriage Date: {props.marriage_date}</p>
+          ) : null}
+          {props.marriage_place ? (
+            <p className="Info_par">Marriage Place: {props.marriage_place}</p>
           ) : null}
           {props.children ? (
             <p className="Info_par">Children: {props.children}</p>
@@ -91,7 +92,6 @@ export default function Person(props: PersonProps) {
           {props.info ? <p className="Info_par">Info: {props.info}</p> : null}
         </div>
       ) : null}
-
     </>
   );
 }
