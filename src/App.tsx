@@ -19,9 +19,9 @@ function App() {
       >(Papa.parse(csv, {
         header: true,
         skipEmptyLines: true,
-      }).data);
+      }).data as Array<Record<string, string>>);
 
-    // console.log(peoplelist[0]);
+    console.log(peoplelist[0]);
 
     const [tree, setTree] = useState("Hirschhorn");
 
