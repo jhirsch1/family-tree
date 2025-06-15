@@ -5,6 +5,13 @@
   flex-direction: column;
 } */
 
+* {
+  font-family: "Inter";
+  font-style: normal;
+  background-color: #9bddff;
+  color: black;
+}
+
 .FamilyTree {
   /* Family Tree */
 
@@ -53,12 +60,6 @@
   border: 2px solid #000000;
 }
 
-* {
-  font-family: "Inter";
-  font-style: normal;
-  background-color: #9bddff;
-  color: black;
-}
 
 .SemBackground {
   /* SemBackground */
