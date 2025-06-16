@@ -89,7 +89,7 @@ export default function Person(props: PersonProps) {
           {props.children2 ? (
             <p className="Info_par">Children 2: {props.children2}</p>
           ) : null}
-          {props.info ? <p className="Info_par">Info: {props.info}</p> : null}
+          {props.info ? <p className="Info_par">{props.info}</p> : null}
         </div>
       ) : null}
     </>
