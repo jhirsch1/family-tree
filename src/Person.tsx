@@ -37,6 +37,9 @@ export default function Person(props: PersonProps) {
     setClicked(!clicked); // Toggle clicked state
   }
 
+  // Split the info string into paragraphs
+  const paragraphs = props.info?.split(/\n\s*\n/); // split on empty lines
+
   // aria label for accessibility
   const aria_label = "Person: " + props.name;
 
@@ -89,7 +92,13 @@ export default function Person(props: PersonProps) {
           {props.children2 ? (
             <p className="Info_par">Children 2: {props.children2}</p>
           ) : null}
-          {props.info ? <p className="Info_par">{props.info}</p> : null}
+          {props.info
+            ? paragraphs?.map((para, idx) => (
+                <p className="Info_par" key={idx}>
+                  {para}
+                </p>
+              ))
+            : null}
         </div>
       ) : null}
     </>

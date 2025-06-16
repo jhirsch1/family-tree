@@ -21,7 +21,8 @@ function App() {
         skipEmptyLines: true,
       }).data as Array<Record<string, string>>);
 
-    console.log(peoplelist[0]);
+    console.log(peoplelist[17]);
+    console.log(peoplelist[17].info.includes("\n"));
 
     const [tree, setTree] = useState("Hirschhorn");
 
