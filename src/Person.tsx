@@ -33,7 +33,6 @@ export default function Person(props: PersonProps) {
 
   function handleClick() {
     // Handle click event
-    console.log(`Clicked on ${props.name}`);
     setClicked(!clicked); // Toggle clicked state
   }
 

@@ -27,13 +27,11 @@ function App() {
     // Password box
     const [textbox, setTextbox] = useState("");
     const [open, setOpen] = useState(false);
-    console.log(open)
 
     function handleSubmit() {
         if (textbox === "Password") {
             setOpen(true)
         }
-        console.log(open)
     }
 
 
