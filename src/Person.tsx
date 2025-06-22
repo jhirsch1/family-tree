@@ -42,7 +42,7 @@ export default function Person(props: PersonProps) {
   // aria label for accessibility
   const aria_label = "Person: " + props.name;
 
-  const class_name = "Person_" + props.generation;
+  const class_name = "person Person_" + props.generation;
 
   return (
     <>

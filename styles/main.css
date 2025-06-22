@@ -235,3 +235,9 @@
 .Person_7:hover {
   font-weight: bold;
 }
+
+@media (max-width: 980px) {
+  .person {
+    width: 90vw;
+  }
+}
