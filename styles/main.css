@@ -63,7 +63,7 @@
 
 .person {
   position: static;
-  width: 100%;
+  min-width: fit-content;
   height: 4vh;
 }
 .person:hover {
@@ -195,9 +195,12 @@
 }
 
 
-@media (max-width: 980px) {
+@media (max-width: 1155px) {
   .person {
     height: 8vh;
+  }
+  * {
+    font-size: .9rem;
   }
 }
 @media (max-width: 530px) {
