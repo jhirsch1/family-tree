@@ -238,6 +238,11 @@
 
 @media (max-width: 980px) {
   .person {
-    width: 110vw;
+    height: 8vh;
+  }
+}
+@media (max-width: 530px) {
+  .person {
+    height: 12vh;
   }
 }
