@@ -196,15 +196,22 @@
 
 
 @media (max-width: 1155px) {
-  .person {
-    height: 8vh;
+  * {
+    font-size: .95rem;
   }
+}
+@media (max-width: 1060px) {
   * {
     font-size: .9rem;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 1011px) {
   .person {
-    height: 12vh;
+    height: 6vh;
+  }
+}
+@media (max-width: 622px) {
+  .person {
+    height: 8vh;
   }
 }
