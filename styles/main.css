@@ -35,7 +35,7 @@
 
 .Info_background {
   /* Info Box background */
-  position: sta;
+  position: static;
   background: var(--light-green);
   border: 2px solid var(--off-black);
 
@@ -46,6 +46,7 @@
 
   width: 90vw;
   margin-left: 5vw;
+  margin-right: 5vw;
 
   /* font-weight: 400; */
   /* font-size: 4vw; */
