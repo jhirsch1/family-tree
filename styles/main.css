@@ -5,11 +5,18 @@
   flex-direction: column;
 } */
 
+:root {
+  /* Colors */
+  --off-white: #fafaf5;
+  --off-black: #3a3a3a;
+  --light-green: #d9e0d6;
+}
+
 * {
   font-family: "Inter";
   font-style: normal;
-  background-color: #9bddff;
-  color: black;
+  background-color: var(--off-white);
+  color: var(--off-black);
 }
 
 .FamilyTree {
@@ -29,8 +36,8 @@
 .Info_background {
   /* Info Box background */
   position: sta;
-  background: #d9d9d9;
-  border: 2px solid #000000;
+  background: var(--light-green);
+  border: 2px solid var(--off-black);
 
   /* font-weight: 400; */
   /* font-size: 4vw; */
@@ -39,7 +46,7 @@
 .Info_par {
   /* Info */
 
-  background: #d9d9d9;
+  background: var(--light-green);
   /* border: 2px solid #000000; */
 
   /* font-weight: 400; */
