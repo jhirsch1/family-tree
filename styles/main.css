@@ -61,6 +61,12 @@
   /* font-size: 4vw; */
 }
 
+.person {
+  position: static;
+  width: 100%;
+  height: 4vh;
+}
+
 .Person_0 {
   /* Person in generation 0 */
   position: static;
@@ -74,9 +80,6 @@
 
 .Person_0m {
   /* Person in generation 0, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 20px;
 
   /* font-weight: 400;
@@ -85,9 +88,6 @@
 
 .Person_1 {
   /* Person in generation 1 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 40px;
 
   /* font-weight: 400;
@@ -96,9 +96,6 @@
 
 .Person_1m {
   /* Person in generation 0, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 60px;
 
   /* font-weight: 400;
@@ -107,9 +104,6 @@
 
 .Person_2 {
   /* Person in generation 2 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 80px;
 
   /* font-weight: 400;
@@ -118,9 +112,6 @@
 
 .Person_2m {
   /* Person in generation 2, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 100px;
 
   /* font-weight: 400;
@@ -129,9 +120,6 @@
 
 .Person_3 {
   /* Person in generation 3 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 120px;
 
   /* font-weight: 400;
@@ -140,9 +128,6 @@
 
 .Person_3m {
   /* Person in generation 3, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 140px;
 
   /* font-weight: 400;
@@ -151,9 +136,6 @@
 
 .Person_4 {
   /* Person in generation 4 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 160px;
 
   /* font-weight: 400;
@@ -162,9 +144,6 @@
 
 .Person_4m {
   /* Person in generation 4, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 180px;
 
   /* font-weight: 400;
@@ -173,9 +152,6 @@
 
 .Person_5 {
   /* Person in generation 5 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 200px;
 
   /* font-weight: 400;
@@ -184,9 +160,6 @@
 
 .Person_5m {
   /* Person in generation 5, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 220px;
 
   /* font-weight: 400;
@@ -195,9 +168,6 @@
 
 .Person_6 {
   /* Person in generation 6 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 240px;
 
   /* font-weight: 400;
@@ -206,9 +176,6 @@
 
 .Person_6m {
   /* Person in generation 6, by marriage */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 260px;
 
   /* font-weight: 400;
@@ -217,9 +184,6 @@
 
 .Person_7 {
   /* Person in generation 7 */
-  position: static;
-  width: 100vw;
-  height: 4vh;
   margin-left: 280px;
 
   /* font-weight: 400;
