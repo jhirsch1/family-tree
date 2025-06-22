@@ -39,6 +39,12 @@
   background: var(--light-green);
   border: 2px solid var(--off-black);
 
+  margin-bottom: 2vh;
+  justify-items: center;
+
+  width: 90vw;
+  margin-left: 5vw;
+
   /* font-weight: 400; */
   /* font-size: 4vw; */
 }
