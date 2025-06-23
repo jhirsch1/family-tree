@@ -65,6 +65,7 @@
   position: static;
   min-width: fit-content;
   height: 4vh;
+  min-height: max-content;
 }
 .person:hover {
   font-weight: bold;
@@ -194,7 +195,7 @@
   font-size: 4vw; */
 }
 
-@media (max-width: 1155px) {
+/* @media (max-width: 1155px) {
   * {
     font-size: 0.95rem;
   }
@@ -208,4 +209,4 @@
   * {
     font-size: 0.9rem;
   }
-}
+} */
