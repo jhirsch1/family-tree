@@ -204,3 +204,8 @@
     height: 6vh;
   }
 }
+@media (max-width: 650px) {
+  * {
+    font-size: 0.9rem;
+  }
+}
