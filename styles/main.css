@@ -66,6 +66,7 @@
   min-width: fit-content;
   height: 4vh;
   min-height: max-content;
+  padding-bottom: 1vh;
 }
 .person:hover {
   font-weight: bold;
