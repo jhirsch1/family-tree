@@ -42,6 +42,11 @@ header {
   }
 }
 
+input {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
 .FamilyTree {
   /* Family Tree */
 
