@@ -19,18 +19,39 @@
   color: var(--off-black);
 }
 
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--light-green);
+  margin-bottom: 1vh;
+  padding-left: 1vw;
+  border: 2px solid var(--off-black);
+  border-radius: 25px;
+
+  z-index: 999;
+
+  p {
+    background-color: var(--light-green);
+  }
+  h1 {
+    background-color: var(--light-green);
+  }
+}
+
 .FamilyTree {
   /* Family Tree */
 
   position: absolute;
   width: 70vw;
   height: 20vh;
-  left: 3vw;
-  top: 4vh;
+  /* left: 3vw;
+  top: 4vh; */
 
   font-weight: 400;
   font-size: 4vw;
   /*line-height: 116px;*/
+  background-color: var(--light-green);
 }
 
 .Info_background {
