@@ -4,7 +4,7 @@ import "reactjs-popup/dist/index.css";
 import "../styles/main.css";
 import { NullableDate } from "./types";
 import Person from "./Person";
-import csv from "../data/Hirschhorn_Family12.csv?raw";
+import csv from "../data/Hirschhorn_Family13.csv?raw";
 import Papa from "papaparse";
 import { func } from "prop-types";
 

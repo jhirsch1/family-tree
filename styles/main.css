@@ -196,16 +196,6 @@
   font-size: 4vw; */
 }
 
-/* @media (max-width: 1155px) {
-  * {
-    font-size: 0.95rem;
-  }
-}
-@media (max-width: 1060px) {
-  .person {
-    height: 6vh;
-  }
-}*/
 @media (max-width: 550px) {
   * {
     font-size: 0.9rem;
@@ -220,5 +210,48 @@
   }
   * {
     font-size: 0.89rem;
+  }
+
+  .Person_0m {
+    margin-left: 10px;
+  }
+  .Person_1 {
+    margin-left: 20px;
+  }
+  .Person_1m {
+    margin-left: 30px;
+  }
+  .Person_2 {
+    margin-left: 40px;
+  }
+  .Person_2m {
+    margin-left: 50px;
+  }
+  .Person_3 {
+    margin-left: 60px;
+  }
+  .Person_3m {
+    margin-left: 70px;
+  }
+  .Person_4 {
+    margin-left: 80px;
+  }
+  .Person_4m {
+    margin-left: 90px;
+  }
+  .Person_5 {
+    margin-left: 100px;
+  }
+  .Person_5m {
+    margin-left: 110px;
+  }
+  .Person_6 {
+    margin-left: 120px;
+  }
+  .Person_6m {
+    margin-left: 130px;
+  }
+  .Person_7 {
+    margin-left: 140px;
   }
 }
