@@ -22,7 +22,7 @@
 header {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 98%;
   background-color: var(--light-green);
   margin-bottom: 1vh;
   padding-left: 1vw;
@@ -33,9 +33,11 @@ header {
 
   p {
     background-color: var(--light-green);
+    width: fit-content;
   }
   h1 {
     background-color: var(--light-green);
+    width: fit-content;
   }
 }
 
@@ -51,7 +53,7 @@ header {
   font-weight: 400;
   font-size: 4vw;
   /*line-height: 116px;*/
-  background-color: var(--light-green);
+  background-color: none;
 }
 
 .Info_background {
