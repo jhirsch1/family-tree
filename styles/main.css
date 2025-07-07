@@ -46,6 +46,24 @@ header {
   }
 }
 
+.toggle_tree {
+  display: flex;
+  gap: 10%;
+}
+
+.toggle_button {
+
+  border-left: 1px solid var(--off-black);
+
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 4%;
+    border-left: 3px solid var(--off-black);
+  }
+  
+}
+
 input {
   margin-left: 1%;
   margin-top: 1%;
