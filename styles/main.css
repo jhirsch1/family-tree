@@ -54,11 +54,12 @@ header {
 .toggle_button {
 
   border-left: 1px solid var(--off-black);
+  padding-left: 4%;
+
 
   &:hover {
     font-weight: bold;
     cursor: pointer;
-    padding-left: 4%;
     border-left: 3px solid var(--off-black);
   }
   
