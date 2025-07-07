@@ -40,6 +40,10 @@ header {
     background-color: var(--light-green);
     width: fit-content;
   }
+  div {
+    background-color: var(--light-green);
+    width: fit-content;
+  }
 }
 
 input {

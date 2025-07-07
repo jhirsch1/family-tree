@@ -4,7 +4,8 @@ import "reactjs-popup/dist/index.css";
 import "../styles/main.css";
 import { NullableDate } from "./types";
 import Person from "./Person";
-import csv from "../data/Hirschhorn_Family16.csv?raw";
+import csv_hirschhorn from "../data/Hirschhorn_Family_Hirschhorn.csv?raw";
+import csv_both from "../data/Hirschhorn_Family_Both.csv?raw";
 import Papa from "papaparse";
 import { func } from "prop-types";
 
@@ -13,7 +14,7 @@ function App() {
   // each dictionary is a row in the csv file
   // the keys are the headers of the csv file
   const [peoplelist, setPeopleList] = useState<Array<Record<string, string>>>(
-    Papa.parse(csv, {
+    Papa.parse(csv_hirschhorn, {
       header: true,
       skipEmptyLines: true,
     }).data as Array<Record<string, string>>
@@ -33,27 +34,46 @@ function App() {
   }
 
   // Family of the family tree - not in use now, maybe in the future
-  // const [tree, setTree] = useState("Hirschhorn");
+  const [tree, setTree] = useState("Hirschhorn");
 
-  // function handleClickHirschhorn() {
-  //     // Handle click event
-  //     console.log("Clicked on Hirschhorn");
-  //     // setClicked(!clicked); // Toggle clicked state
-  //     setTree("Hirschhorn");
-  // }
-  // function handleClickBronsther() {
-  //     // Handle click event
-  //     console.log("Clicked on Bronsther");
-  //     // setClicked(!clicked); // Toggle clicked state
-  //     setTree("Bronsther");
-  // }
+  function handleClickHirschhorn() {
+      // Handle click event
+      console.log("Clicked on Hirschhorn");
+      // setClicked(!clicked); // Toggle clicked state
+      setTree("Hirschhorn");
+      setPeopleList(
+        Papa.parse(csv_hirschhorn, {
+          header: true,
+          skipEmptyLines: true,
+        }).data as Array<Record<string, string>>
+      );
+  }
+  function handleClickBoth() {
+      // Handle click event
+      console.log("Clicked on Bronsther");
+      // setClicked(!clicked); // Toggle clicked state
+      setTree("Bronsther");
+      setPeopleList(
+        Papa.parse(csv_both, {
+          header: true,
+          skipEmptyLines: true,
+        }).data as Array<Record<string, string>>
+      );
+  }
 
   return (
     <div className="App">
-      {/* <div className="button1" onClick={handleClickHirschhorn}> Hirschhorn </div>
-        <div className="button2" onClick={handleClickBronsther}>Bronsther</div> */}
       <header>
         <h1>Family Tree</h1>
+        <div>
+          <div className="button1" onClick={handleClickHirschhorn}>
+            {" "}
+            Hirschhorn{" "}
+          </div>
+          <div className="button2" onClick={handleClickBoth}>
+            Both
+          </div>
+        </div>
         <p>Click on a person to see their details.</p>
       </header>
 
