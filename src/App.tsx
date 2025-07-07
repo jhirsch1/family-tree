@@ -66,12 +66,15 @@ function App() {
       <header>
         <h1>Family Tree</h1>
         <div className="toggle_tree">
-          <div className="toggle_button button1" onClick={handleClickHirschhorn}>
-            {" "}
-            Hirschhorn{" "}
-          </div>
           <div className="toggle_button button2" onClick={handleClickBoth}>
             Both
+          </div>
+          <div
+            className="toggle_button button1"
+            onClick={handleClickHirschhorn}
+          >
+            {" "}
+            Hirschhorn{" "}
           </div>
         </div>
         <p>Click on a person to see their details.</p>
