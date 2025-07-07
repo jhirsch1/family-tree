@@ -35,10 +35,12 @@ header {
   p {
     background-color: var(--light-green);
     width: fit-content;
+    margin-top: 1%;
   }
   h1 {
     background-color: var(--light-green);
     width: fit-content;
+    margin-bottom: 1%;
   }
   div {
     background-color: var(--light-green);
