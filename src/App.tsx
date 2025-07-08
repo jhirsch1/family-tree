@@ -81,20 +81,30 @@ function App() {
       </header>
 
       {!open ? (
-        <input
-          type="text"
-          aria-label="Password input box"
-          aria-description="Type password in this input box"
-          className="PasswordBox"
-          placeholder="Enter Password"
-          onChange={(e) => setTextbox(e.target.value)}
-          value={textbox}
-          onKeyUp={(e) => {
-            if (e.key === "Enter") {
-              handleSubmit();
-            }
-          }}
-        />
+        <div>
+          <input
+            type="text"
+            aria-label="Password input box"
+            aria-description="Type password in this input box"
+            className="PasswordBox"
+            placeholder="Enter Password"
+            onChange={(e) => setTextbox(e.target.value)}
+            value={textbox}
+            onKeyUp={(e) => {
+              if (e.key === "Enter") {
+                handleSubmit();
+              }
+            }}
+          />
+          <button
+            aria-label="Enter Button"
+            aria-description="Click this button to input the password"
+            className="password_button"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
+        </div>
       ) : null}
 
       {open
