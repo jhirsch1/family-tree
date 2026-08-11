@@ -259,6 +259,14 @@ input {
   font-size: 4vw; */
 }
 
+.Person_7m {
+  /* Person in generation 7, by marriage */
+  margin-left: 280px;
+
+  /* font-weight: 400;
+  font-size: 4vw; */
+}
+
 @media (max-width: 550px) {
   * {
     font-size: 0.9rem;
@@ -316,5 +324,8 @@ input {
   }
   .Person_7 {
     margin-left: 140px;
+  }
+  .Person_7m {
+    margin-left: 150px;
   }
 }
